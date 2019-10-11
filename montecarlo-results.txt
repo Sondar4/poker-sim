@@ -1,0 +1,9 @@
+highest card	0.1751400
+pair		0.4508500
+two pair	0.2370000
+three of a kind	0.0677800
+straight	0.0317200
+flush		0.0295000
+full house	0.0062900
+four of a kind	0.0015700
+straight flush	0.0001500
