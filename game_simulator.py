@@ -110,7 +110,7 @@ def second_display(your_hand, table, number_of_players, deck):
 
 
 if __name__ == '__main__':
-    sg.SetOptions(icon='icon_card.ico')
+    sg.SetOptions(icon='images/icon_card.ico')
     first_layout = [
                 [sg.Frame(layout=[  
                     [sg.Text('Card 1'), sg.InputCombo(ranks), sg.InputCombo((suits))],
@@ -136,6 +136,10 @@ if __name__ == '__main__':
     first_window = sg.Window('Poker Simulator').Layout(first_layout)
     option, value = first_window.Read()
     first_window.Close()
+
+    # In previous versions of pysimplegui this was already a list
+    if type(value) == dict:
+        value = list(value.values())
 
     if option == 'Ok':
         if 'Not Defined' in value[:10]:
