@@ -51,4 +51,4 @@ easy to compare for a human the score of two hands.
 
 In this screenshot of test.py it's it's shown how the system works:
 
--![Console game](images/test.png)
+![Console game](images/test.png)
